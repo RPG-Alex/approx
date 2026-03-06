@@ -515,6 +515,7 @@ struct AbsDiffEqParser {
     pub struct_args: StructArgs,
 }
 
+/// Derives [`approx::AbsDiffEq`] for a struct or enum.
 /// See the [crate] level documentation for a guide.
 #[proc_macro_derive(AbsDiffEq, attributes(approx))]
 pub fn derive_abs_diff_eq(input: proc_macro::TokenStream) -> proc_macro::TokenStream {
@@ -522,6 +523,7 @@ pub fn derive_abs_diff_eq(input: proc_macro::TokenStream) -> proc_macro::TokenSt
     parsed.implement_derive_abs_diff_eq().into()
 }
 
+/// Derives [`approx::RelativeEq`] for a struct or enum.
 /// See the [crate] level documentation for a guide.
 #[proc_macro_derive(RelativeEq, attributes(approx))]
 pub fn derive_rel_diff_eq(input: proc_macro::TokenStream) -> proc_macro::TokenStream {
