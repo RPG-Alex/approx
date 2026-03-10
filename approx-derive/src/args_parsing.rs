@@ -13,7 +13,6 @@ pub struct FieldWithArgs {
 
 pub struct EnumVariant {
     pub ident: syn::Ident,
-    pub discriminant: Option<syn::Expr>,
     pub fields_with_args: Vec<FieldWithArgs>,
 }
 

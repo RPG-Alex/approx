@@ -63,7 +63,6 @@ impl syn::parse::Parse for BaseType {
                     Ok(EnumVariant {
                         fields_with_args,
                         ident: v.ident.clone(),
-                        discriminant: v.discriminant.clone().map(|x| x.1),
                     })
                 })
                 .collect::<syn::Result<Vec<_>>>()?;

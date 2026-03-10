@@ -215,7 +215,7 @@
 //!   https://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html)
 
 #![no_std]
-#![allow(clippy::transmute_float_to_int)]
+#![allow(unnecessary_transmutes)]
 #![cfg_attr(docsrs, feature(doc_cfg))]
 
 #[cfg(feature = "num_complex")]

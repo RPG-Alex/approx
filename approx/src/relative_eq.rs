@@ -285,7 +285,6 @@ macro_rules! impl_relative_eq {
     () => {
         impl RelativeEq for () {
             fn default_max_relative() -> Self::Epsilon {
-                ()
             }
 
             fn relative_eq(
